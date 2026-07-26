@@ -34,7 +34,7 @@ function renderBeaches(beaches, filter = 'all') {
   const visible = filter === 'all' ? beaches : beaches.filter(beach => beach.town === filter);
   $('#beach-grid').innerHTML = visible.map(beach => `
     <article class="beach-card">
-      <div class="beach-image"><img src="${beach.image}" alt="${beach.imageAlt}" loading="lazy" decoding="async"><span class="beach-badge">${beach.best}</span><span class="beach-rating">★ ${beach.rating.toFixed(1)}</span></div>
+      <div class="beach-image"><iframe title="Satellite view of ${beach.name}" src="https://www.google.com/maps?q=${encodeURIComponent(beach.mapQuery)}&t=k&z=16&output=embed" loading="lazy" tabindex="-1"></iframe><a class="card-cover-link" href="${beach.maps}" target="_blank" rel="noreferrer" aria-label="Open ${beach.name} in Google Maps"></a><span class="beach-badge">${beach.best}</span><span class="beach-rating">★ ${beach.rating.toFixed(1)}</span></div>
       <div class="beach-body"><h3>${beach.name}</h3><p class="beach-location">${beach.town} · ${beach.coast} coast</p>
         <div class="trait-grid"><div class="trait"><small>Shore</small><b>${beach.surface}</b></div><div class="trait"><small>Water</small><b>${beach.water}</b></div><div class="trait"><small>Crowds</small><b>${beach.crowds}</b></div></div>
         <p class="beach-notes">${beach.notes}</p>
@@ -59,7 +59,7 @@ function renderTransport(transfers) {
 function renderPlaces(places) {
   $('#places-grid').innerHTML = places.map(place => `
     <article class="mini-card">
-      <a class="mini-image" href="${place.maps}" target="_blank" rel="noreferrer"><img src="${place.image}" alt="${place.name} in ${place.town}" loading="lazy" decoding="async"><span>${place.best}</span></a>
+      <div class="mini-image"><iframe title="Satellite view of ${place.name}" src="https://www.google.com/maps?q=${encodeURIComponent(place.mapQuery)}&t=k&z=17&output=embed" loading="lazy" tabindex="-1"></iframe><a class="card-cover-link" href="${place.maps}" target="_blank" rel="noreferrer" aria-label="Open ${place.name} in Google Maps"></a><span>${place.best}</span></div>
       <div class="mini-body"><small>${place.type} · ${place.town}</small><h3>${place.name}</h3><p>${place.notes}</p><a href="${place.maps}" target="_blank" rel="noreferrer">View on map ↗</a></div>
     </article>`).join('');
 }
@@ -67,8 +67,8 @@ function renderPlaces(places) {
 function renderFood(foods) {
   $('#food-grid').innerHTML = foods.map(food => `
     <article class="mini-card">
-      <div class="mini-image"><img src="${food.image}" alt="${food.name}, a traditional Puglian ${food.kind.toLowerCase()}" loading="lazy" decoding="async"><span>Try in ${food.where}</span></div>
-      <div class="mini-body"><small>${food.kind} · with ${food.pairing}</small><h3>${food.name}</h3><p>${food.notes}</p></div>
+      <div class="mini-image food-visual" role="img" aria-label="${food.name}, traditional Puglian ${food.kind.toLowerCase()}"><b aria-hidden="true">${food.icon}</b><a class="card-cover-link" href="${food.maps}" target="_blank" rel="noreferrer" aria-label="Find ${food.name} near ${food.where} on Google Maps"></a><span>Try in ${food.where}</span></div>
+      <div class="mini-body"><small>${food.kind} · with ${food.pairing}</small><h3>${food.name}</h3><p>${food.notes}</p><a href="${food.maps}" target="_blank" rel="noreferrer">Find nearby ↗</a></div>
     </article>`).join('');
 }
 
