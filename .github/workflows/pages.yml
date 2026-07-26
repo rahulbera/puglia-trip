@@ -25,6 +25,11 @@ jobs:
         uses: actions/checkout@v4
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
+        with:
+          # Create/enable the Pages site when the repository has never had one.
+          # Without this, configure-pages only reads an existing Pages setup and
+          # fails with "Get Pages site failed ... Not Found" on first deploy.
+          enablement: true
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3
         with:
