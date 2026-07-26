@@ -49,7 +49,26 @@ function renderTransport(transfers) {
       <div class="transfer-route"><small>Transfer</small><b>${item.from}<span>→</span>${item.to}</b></div>
       <div class="transfer-meta"><small>Route</small><b>${item.mode}</b></div>
       <div class="transfer-meta"><small>Time · leave</small><b>${item.duration} · ${item.depart}</b></div>
-      <div class="transfer-icon" title="${item.tip}">↗</div>
+      <div class="transfer-actions">
+        <a href="${item.booking}" target="_blank" rel="noreferrer" title="Book with ${item.operator}"><span>↗</span> Book</a>
+        <a href="${item.timetable}" target="_blank" rel="noreferrer" title="Check the ${item.operator} timetable"><span>◷</span> Times</a>
+      </div>
+    </article>`).join('');
+}
+
+function renderPlaces(places) {
+  $('#places-grid').innerHTML = places.map(place => `
+    <article class="mini-card">
+      <a class="mini-image" href="${place.maps}" target="_blank" rel="noreferrer"><img src="${place.image}" alt="${place.name} in ${place.town}" loading="lazy" decoding="async"><span>${place.best}</span></a>
+      <div class="mini-body"><small>${place.type} · ${place.town}</small><h3>${place.name}</h3><p>${place.notes}</p><a href="${place.maps}" target="_blank" rel="noreferrer">View on map ↗</a></div>
+    </article>`).join('');
+}
+
+function renderFood(foods) {
+  $('#food-grid').innerHTML = foods.map(food => `
+    <article class="mini-card">
+      <div class="mini-image"><img src="${food.image}" alt="${food.name}, a traditional Puglian ${food.kind.toLowerCase()}" loading="lazy" decoding="async"><span>Try in ${food.where}</span></div>
+      <div class="mini-body"><small>${food.kind} · with ${food.pairing}</small><h3>${food.name}</h3><p>${food.notes}</p></div>
     </article>`).join('');
 }
 
@@ -95,10 +114,15 @@ async function init() {
   setupNavigation();
   setupTheme();
   try {
-    const [trip, beaches] = await Promise.all([getJSON('data/itinerary.json'), getJSON('data/beaches.json')]);
+    const [trip, beaches, places, foods] = await Promise.all([
+      getJSON('data/itinerary.json'), getJSON('data/beaches.json'),
+      getJSON('data/places.json'), getJSON('data/food.json')
+    ]);
     renderItinerary(trip.days);
     renderTransport(trip.transfers);
     renderBeaches(beaches);
+    renderPlaces(places);
+    renderFood(foods);
     $$('.filter').forEach(button => button.addEventListener('click', () => {
       $$('.filter').forEach(item => item.classList.remove('active'));
       button.classList.add('active');

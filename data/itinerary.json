@@ -12,10 +12,10 @@
     {"day":10,"date":"Aug 16","base":"Departure","title":"A presto, Puglia","subtitle":"Lecce to Brindisi Airport","morning":"Breakfast in Lecce and pick up a final pasticciotto for the journey.","afternoon":"Train to Brindisi, then airport shuttle or bus for the flight to Zurich.","evening":"Home—with salt in your bag and a camera roll full of blue.","note":"Allow a generous buffer until the Brindisi departure flight is booked."}
   ],
   "transfers": [
-    {"from":"Bari Airport","to":"Monopoli","mode":"Train via Bari Centrale","duration":"1h 15–45m","depart":"After 12:00","tip":"Airport rail to Bari Centrale, then Trenitalia south."},
-    {"from":"Monopoli","to":"Gallipoli","mode":"Train via Bari/Lecce","duration":"3h 30–4h 30m","depart":"Around 09:00","tip":"Compare Trenitalia and FSE connections."},
-    {"from":"Gallipoli","to":"Otranto","mode":"FSE via Lecce","duration":"2h 30–3h 30m","depart":"Around 09:30","tip":"A change in Lecce is normally required."},
-    {"from":"Otranto","to":"Lecce","mode":"FSE bus or train","duration":"1h 15–2h","depart":"Late morning","tip":"Holiday service may be reduced."},
-    {"from":"Lecce","to":"Brindisi Airport","mode":"Train + airport bus","duration":"1h–1h 30m","depart":"Flight minus 3h","tip":"Train to Brindisi, then STP airport link."}
+    {"from":"Bari Airport","to":"Monopoli","mode":"Train via Bari Centrale","duration":"1h 15–45m","depart":"After 12:00","tip":"Airport rail to Bari Centrale, then Trenitalia south.","booking":"https://www.lefrecce.it/Channels.Website.WEB/","timetable":"https://www.trenitalia.com/en.html","operator":"Trenitalia"},
+    {"from":"Monopoli","to":"Gallipoli","mode":"Train via Bari/Lecce","duration":"3h 30–4h 30m","depart":"Around 09:00","tip":"Compare Trenitalia and FSE connections.","booking":"https://www.lefrecce.it/Channels.Website.WEB/","timetable":"https://www.fseonline.it/","operator":"Trenitalia + FSE"},
+    {"from":"Gallipoli","to":"Otranto","mode":"FSE train or bus via Lecce","duration":"2h 30–3h 30m","depart":"Around 09:30","tip":"A change in Lecce is normally required.","booking":"https://www.fseonline.it/","timetable":"https://www.fseonline.it/","operator":"FSE"},
+    {"from":"Otranto","to":"Lecce","mode":"FSE bus or train","duration":"1h 15–2h","depart":"Late morning","tip":"Holiday service may be reduced.","booking":"https://www.fseonline.it/","timetable":"https://www.fseonline.it/","operator":"FSE"},
+    {"from":"Lecce","to":"Brindisi Airport","mode":"Train + airport bus","duration":"1h–1h 30m","depart":"Flight minus 3h","tip":"Train to Brindisi, then STP airport link.","booking":"https://www.lefrecce.it/Channels.Website.WEB/","timetable":"https://www.stpbrindisi.it/","operator":"Trenitalia + STP"}
   ]
 }
