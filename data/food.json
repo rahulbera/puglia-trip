@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Orecchiette",
+    "kind": "Pasta",
+    "where": "Bari or Lecce",
+    "pairing": "Cime di rapa",
+    "notes": "The little “ears” are Puglia's signature pasta. Look for them with bitter greens, anchovy and toasted breadcrumbs.",
+    "maps": "https://www.google.com/maps/search/?api=1&query=Orecchiette+Bari+or+Lecce+Puglia+Italy",
+    "image": "https://tse2.mm.bing.net/th?q=Orecchiette+authentic+Puglian+food+Italy+photograph&w=1200&h=800&c=7&rs=1&p=1",
+    "imageAlt": "Traditional Puglian Orecchiette",
+    "imageSearch": "https://www.google.com/search?tbm=isch&q=Orecchiette+authentic+Puglian+food+Italy+photograph"
+  },
+  {
+    "name": "Focaccia barese",
+    "kind": "Bakery",
+    "where": "Bari",
+    "pairing": "Morning snack",
+    "notes": "Thick but airy, baked with tomatoes, olives and plenty of olive oil; the crisp, oily base is the best part.",
+    "maps": "https://www.google.com/maps/search/?api=1&query=Focaccia+barese+Bari+Puglia+Italy",
+    "image": "https://tse2.mm.bing.net/th?q=Focaccia+barese+authentic+Puglian+food+Italy+photograph&w=1200&h=800&c=7&rs=1&p=1",
+    "imageAlt": "Traditional Puglian Focaccia barese",
+    "imageSearch": "https://www.google.com/search?tbm=isch&q=Focaccia+barese+authentic+Puglian+food+Italy+photograph"
+  },
+  {
+    "name": "Pasticciotto",
+    "kind": "Pastry",
+    "where": "Lecce",
+    "pairing": "Caffè leccese",
+    "notes": "A warm oval of shortcrust pastry filled with custard. It began in nearby Galatina and is best eaten at breakfast.",
+    "maps": "https://www.google.com/maps/search/?api=1&query=Pasticciotto+Lecce+Puglia+Italy",
+    "image": "https://tse2.mm.bing.net/th?q=Pasticciotto+authentic+Puglian+food+Italy+photograph&w=1200&h=800&c=7&rs=1&p=1",
+    "imageAlt": "Traditional Puglian Pasticciotto",
+    "imageSearch": "https://www.google.com/search?tbm=isch&q=Pasticciotto+authentic+Puglian+food+Italy+photograph"
+  },
+  {
+    "name": "Puccia salentina",
+    "kind": "Street food",
+    "where": "Gallipoli or Lecce",
+    "pairing": "Local beer",
+    "notes": "A wood-fired bread pocket with a crisp shell, filled to order with vegetables, cheese, meats or tuna.",
+    "maps": "https://www.google.com/maps/search/?api=1&query=Puccia+salentina+Gallipoli+or+Lecce+Puglia+Italy",
+    "image": "https://tse2.mm.bing.net/th?q=Puccia+salentina+authentic+Puglian+food+Italy+photograph&w=1200&h=800&c=7&rs=1&p=1",
+    "imageAlt": "Traditional Puglian Puccia salentina",
+    "imageSearch": "https://www.google.com/search?tbm=isch&q=Puccia+salentina+authentic+Puglian+food+Italy+photograph"
+  },
+  {
+    "name": "Fritto misto",
+    "kind": "Seafood",
+    "where": "Monopoli or Gallipoli",
+    "pairing": "Verdeca wine",
+    "notes": "A paper cone or platter of lightly fried local fish, squid and prawns—ideal after a long saltwater day.",
+    "maps": "https://www.google.com/maps/search/?api=1&query=Fritto+misto+Monopoli+or+Gallipoli+Puglia+Italy",
+    "image": "https://tse2.mm.bing.net/th?q=Fritto+misto+authentic+Puglian+food+Italy+photograph&w=1200&h=800&c=7&rs=1&p=1",
+    "imageAlt": "Traditional Puglian Fritto misto",
+    "imageSearch": "https://www.google.com/search?tbm=isch&q=Fritto+misto+authentic+Puglian+food+Italy+photograph"
+  },
+  {
+    "name": "Burrata",
+    "kind": "Cheese",
+    "where": "Monopoli or Alberobello",
+    "pairing": "Tomatoes + olive oil",
+    "notes": "Invented in Puglia: a mozzarella pouch enclosing creamy stracciatella. Seek it out very fresh and simply dressed.",
+    "maps": "https://www.google.com/maps/search/?api=1&query=Burrata+Monopoli+or+Alberobello+Puglia+Italy",
+    "image": "https://tse2.mm.bing.net/th?q=Burrata+authentic+Puglian+food+Italy+photograph&w=1200&h=800&c=7&rs=1&p=1",
+    "imageAlt": "Traditional Puglian Burrata",
+    "imageSearch": "https://www.google.com/search?tbm=isch&q=Burrata+authentic+Puglian+food+Italy+photograph"
+  },
+  {
+    "name": "Rustico leccese",
+    "kind": "Savory pastry",
+    "where": "Lecce",
+    "pairing": "Aperitivo",
+    "notes": "Flaky puff pastry hiding béchamel, tomato and mozzarella—a humble, molten Salento institution.",
+    "maps": "https://www.google.com/maps/search/?api=1&query=Rustico+leccese+Lecce+Puglia+Italy",
+    "image": "https://tse2.mm.bing.net/th?q=Rustico+leccese+authentic+Puglian+food+Italy+photograph&w=1200&h=800&c=7&rs=1&p=1",
+    "imageAlt": "Traditional Puglian Rustico leccese",
+    "imageSearch": "https://www.google.com/search?tbm=isch&q=Rustico+leccese+authentic+Puglian+food+Italy+photograph"
+  },
+  {
+    "name": "Caffè leccese",
+    "kind": "Coffee",
+    "where": "Lecce or Otranto",
+    "pairing": "Pasticciotto",
+    "notes": "Espresso poured over ice and sweetened with almond syrup: practically designed for a Puglian August afternoon.",
+    "maps": "https://www.google.com/maps/search/?api=1&query=Caff%C3%A8+leccese+Lecce+or+Otranto+Puglia+Italy",
+    "image": "https://tse2.mm.bing.net/th?q=Caff%C3%A8+leccese+authentic+Puglian+food+Italy+photograph&w=1200&h=800&c=7&rs=1&p=1",
+    "imageAlt": "Traditional Puglian Caffè leccese",
+    "imageSearch": "https://www.google.com/search?tbm=isch&q=Caff%C3%A8+leccese+authentic+Puglian+food+Italy+photograph"
+  }
+]
